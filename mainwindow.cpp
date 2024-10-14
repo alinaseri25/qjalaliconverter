@@ -68,25 +68,29 @@ void MainWindow::onTimer()
     sprintf((char*)DateTime,"%02d/%02d/%02d",QTime::currentTime().hour(),QTime::currentTime().minute(),QTime::currentTime().second());
     this->ui->Lbl_time->setText(QString("%1")
                                 .arg(QString::fromLatin1((const char *)DateTime)));
+    ui->Lbl_time->setText(QString("%1 - %2*%3").arg(ui->Lbl_time->text()).arg(screen->size().width()).arg(screen->size().height()));
     //setWindowTitle(QString("Size : %1").arg(this->height()));
 }
 
 void MainWindow::on_Sbox_yearsh_valueChanged(int arg1)
 {
     Q_UNUSED(arg1)
-    this->ui->Lbl_MiOut->setText(QString("----/--/--"));
+    //this->ui->Lbl_MiOut->setText(QString("----/--/--"));
+    on_Btn_Calculateshtomi_clicked();
 }
 
 void MainWindow::on_Sbox_monthsh_valueChanged(int arg1)
 {
     Q_UNUSED(arg1)
-    this->ui->Lbl_MiOut->setText(QString("----/--/--"));
+    //this->ui->Lbl_MiOut->setText(QString("----/--/--"));
+    on_Btn_Calculateshtomi_clicked();
 }
 
 void MainWindow::on_Sbox_daysh_valueChanged(int arg1)
 {
     Q_UNUSED(arg1)
-    this->ui->Lbl_MiOut->setText(QString("----/--/--"));
+    //this->ui->Lbl_MiOut->setText(QString("----/--/--"));
+    on_Btn_Calculateshtomi_clicked();
 }
 
 void MainWindow::on_Btn_Calculateshtomi_clicked()
@@ -103,19 +107,22 @@ void MainWindow::on_Btn_Calculateshtomi_clicked()
 void MainWindow::on_Sbox_yearmi_valueChanged(int arg1)
 {
     Q_UNUSED(arg1)
-    this->ui->Lbl_shOut->setText(QString("----/--/--"));
+    //this->ui->Lbl_shOut->setText(QString("----/--/--"));
+    on_Btn_Calculatemitosh_clicked();
 }
 
 void MainWindow::on_Sbox_monthmi_valueChanged(int arg1)
 {
     Q_UNUSED(arg1)
-    this->ui->Lbl_shOut->setText(QString("----/--/--"));
+    //this->ui->Lbl_shOut->setText(QString("----/--/--"));
+    on_Btn_Calculatemitosh_clicked();
 }
 
 void MainWindow::on_Sbox_daymi_valueChanged(int arg1)
 {
     Q_UNUSED(arg1)
-    this->ui->Lbl_shOut->setText(QString("----/--/--"));
+    //this->ui->Lbl_shOut->setText(QString("----/--/--"));
+    on_Btn_Calculatemitosh_clicked();
 }
 
 void MainWindow::on_Btn_Calculatemitosh_clicked()

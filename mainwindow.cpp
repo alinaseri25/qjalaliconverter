@@ -10,15 +10,17 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //this->showFullScreen();
 
+    ui->Btn_Calculatemitosh->hide();
+    ui->Btn_Calculateshtomi->hide();
+
     timer = new QTimer(this);
     connect(timer,&QTimer::timeout,this,&MainWindow::onTimer);
     timer->start(300);
     jalali = new QDATEJALALI(this);
-    //ui->Txt_SystemID.setText(QString(QSysInfo::machineHostName()));
     //this->setWindowTitle(QString("date time"));
     this->setWindowTitle(QString("S/N:%1").arg(QSysInfo::machineHostName()));
 
-    this->setFixedHeight(188);
+    this->setFixedSize(QSize(300,180));
 
     jalali->ProcNow();
     ui->Sbox_yearsh->setValue(jalali->getyearsh());

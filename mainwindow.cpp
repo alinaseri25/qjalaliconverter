@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //this->setWindowTitle(QString("date time"));
     this->setWindowTitle(QString("S/N:%1").arg(QSysInfo::machineHostName()));
 
-    this->setFixedSize(QSize(300,180));
+    this->setFixedSize(QSize(400,200));
 
     jalali->ProcNow();
     ui->Sbox_yearsh->setValue(jalali->getyearsh());

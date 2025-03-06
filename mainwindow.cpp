@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     timer->start(300);
     jalali = new QDATEJALALI(this);
     //this->setWindowTitle(QString("date time"));
-    this->setWindowTitle(QString("S/N:%1").arg(QSysInfo::machineHostName()));
+    this->setWindowTitle(QString("Machine Host Name :%1").arg(QSysInfo::machineHostName()));
 
     this->setFixedSize(QSize(400,200));
 

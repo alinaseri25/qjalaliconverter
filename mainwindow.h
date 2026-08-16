@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <../../JalaliDate/qdatejalali.h>
+#include <../../QtLibraries/JalaliDate/qdatejalali.h>
 #include <QTimer>
 #include <QMessageBox>
 #include <QScreen>

@@ -24,12 +24,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-    ../../JalaliDate/qdatejalali.cpp \
+    ../../QtLibraries/JalaliDate/qdatejalali.cpp \
         main.cpp \
         mainwindow.cpp \
 
 HEADERS += \
-    ../../JalaliDate/qdatejalali.h \
+    ../../QtLibraries/JalaliDate/qdatejalali.h \
         mainwindow.h \
 
 FORMS += \
